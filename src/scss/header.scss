@@ -1,0 +1,108 @@
+.header {
+   background-image: url(..//img/header-img/img_2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.header::after{
+   content: "";
+   width: 100%;
+   height: 100%;
+   display: block;
+   top: 0px;
+   left: 0px;
+   background: rgba( 37, 43, 73, 0.8);
+   position: absolute;
+}
+.wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0;
+   border-bottom: 1px solid #D9D9D9;
+
+logo {
+   margin: 0 15px;
+}
+}
+
+.navigation {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 15px;
+
+
+   ul {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 24px;
+   }
+
+   a {
+      @include navigation;
+   }
+}
+   .header-burger {
+      display: none;
+   }
+.navigation-list__item a:hover {
+      border-bottom: 3px solid red;
+      color: red;
+      padding-bottom: 35px;
+   }
+
+   .inform {
+      padding: 20px;
+   
+   .title-inform {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 900;
+      font-size: $_64px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 189px auto 0;
+   }
+      .description  {
+         margin: 48px auto 0;
+         p {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: $_24px;
+      color: #fff;
+      text-align: center;
+      }
+   }
+   }
+
+   .button {
+      border: 1px solid #FF4343 ;
+      width: 365px;
+      height: 78px;
+      background-color: #FF4343;
+      margin: 85px auto 118px;
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+
+      
+         
+         a {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: $_24px;
+            color: #fff;
+            text-transform: uppercase;
+         }
+   }
+
+   .button:hover {
+      transform: scale(1.2);
+      background-color: rgba(231, 20, 20, 1);
+      box-shadow: 4px 4px 30px #FF4343;
+   }

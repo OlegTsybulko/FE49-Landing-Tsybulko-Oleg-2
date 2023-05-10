@@ -1,0 +1,102 @@
+@mixin navigation {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size:  $_13px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+@mixin features-title {
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   text-transform: uppercase;
+   text-align: center;
+   color:rgba(45, 48, 51, 1);
+   margin-bottom: 50px;
+}
+
+@mixin features-img {
+   margin: auto;
+   margin-bottom: 66px;
+   text-align: center;
+}
+
+@mixin feature-discription{
+   font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+align-items: center;
+text-align: center;
+color: rgba(108, 114, 121, 1);
+}
+
+@mixin work-title {
+   font-family: 'Raleway';
+   font-style: normal;
+   font-size: $_24px;  
+   color: #FFFFFF;
+   text-align: center;
+}
+
+@mixin work-discription {
+   font-family: 'Raleway';
+   font-style: regular;
+   font-size: $_18px;  
+   color: #FFFFFF;
+   text-align: center;
+   margin: 50px auto;
+}
+
+@mixin ourteam-name {
+   font-family: 'Raleway';
+   font-style: Bold;
+   font-size: $_24px;
+   color: rgba(45, 48, 51, 1);
+   margin-bottom: 10px;
+} 
+
+@mixin ourteam-profession {
+   font-family: 'Raleway';
+   font-style: Regular;
+   font-size: $_18px;
+   color:#FF4343;
+   text-transform: uppercase;
+   }
+
+   @mixin ourteam-discription {
+      font-family: 'Raleway';
+      font-style: Regular;
+      font-size: $_18px;
+      color: rgba(108, 114, 121, 1);
+   }
+
+   @mixin contact-title {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: $_18px;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color:#FFFFFF;
+      margin-bottom: 40px;
+   }
+
+   @mixin contact-discription {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-sze: $_18px;
+      align-items: center;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+   }
+
+   

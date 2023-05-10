@@ -1,0 +1,33 @@
+.features{
+
+}
+.features-wrap {
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0 15px;
+   padding: 48px 0;
+
+.features-card {
+width: 370px;
+
+   padding: 0 15px;
+   margin-bottom: 100px
+}
+.features-card__img {
+   border: 1px solid #fff;
+   width: 100px;
+   height: 100px;
+@include features-img;
+}
+
+h2 {
+@include features-title
+}
+
+p {
+@include feature-discription
+}
+}
