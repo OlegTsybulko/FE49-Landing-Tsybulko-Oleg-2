@@ -517,6 +517,7 @@
 
 .slider-img {
   width: 50%;
+  height: 500px;
   border: 1px solid #fff;
   overflow: hidden;
 }
