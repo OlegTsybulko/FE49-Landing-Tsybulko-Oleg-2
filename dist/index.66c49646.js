@@ -558,8 +558,8 @@ function hmrAccept(bundle, id) {
 
 },{}],"dTgwB":[function(require,module,exports) {
 $(document).ready(function() {
-    $(".header-burger").click(function() {
-        $(".header-burger").toggleClass("navigation");
+    $(".header-burger").click(function(event) {
+        $(".header-burger,.navigation").toggleClass("active");
     });
 });
 

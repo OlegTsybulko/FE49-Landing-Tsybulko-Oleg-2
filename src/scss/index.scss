@@ -93,25 +93,22 @@ left: 0;
    .header-burger::after{
       bottom: 0;
    }
-
-   .header-burger.navigation span{
-      opacity: 0;
-   }
-   .header-burger.navigation::before{
-      width: 35px;
-      top: 44px;
-      left: 670px;
-      transform: rotate(43deg);
-   }
-   .header-burger.navigation::after{
-      transform: rotate(-48deg);
-      left: 670px;
-      width: 30px;
-      bottom: 95%;
-   }
-   .header-burger.navigation {
+   .navigation.active {
       top: 0;
    }
+   .header-burger.active span{
+      opacity: 0;
+   }
+   .header-burger.active::before{
+
+      top: 9px;
+      transform: rotate(45deg);
+   }
+   .header-burger.active::after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+
 
    .navigation{
       position: absolute;
