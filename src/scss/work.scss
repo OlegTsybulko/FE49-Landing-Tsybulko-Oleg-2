@@ -1,23 +1,21 @@
-.work{
-   padding: 20px 0;
-}
+
 .work-wrap{
-   padding: 0 0 30px 0 ;
    display: flex;
    flex-wrap: wrap;
-   
+   margin: 0 -15px;
 }
 
-.work-img{
+.worklink{
    border: 1px solid #fff;
    width: 25%;
-   height: 350px;
+   height: 250px;
    position: relative;
    overflow: hidden;
 }
 
-.work-img:hover .work-content{
+.worklink:hover .work-content{
    opacity: 1;
+   transition: 2s;
 }
 .work-pic { 
    position: absolute;

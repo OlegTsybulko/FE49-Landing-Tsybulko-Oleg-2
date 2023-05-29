@@ -21,10 +21,6 @@
 
 
 
-.section {
-   padding: 20px 0;
-}
-
 html{
    font-family: 'Raleway', sans-serif;
    font-family: 'Cardo', serif;
@@ -39,29 +35,61 @@ html{
 }
 
 @media (max-width: 1200px) {
+   .contener {
+      width: 970px;
+}
+.features-card{
+   width: 25%;
+}
+.contact-wrap .lcanion {
+   width: 25%;
+}
+.social{
+   width: 25%;
+}
+.about{
+   width: 25%;
+}
 
-   .ourteam-wrap{
-      width: 700px;
-      margin: auto;
-   }
-   .ourteamnav {
-      margin-bottom: 20px;
-   }
-   .lcanion {
-      width: 250px;
-   }
-   .social{
-      width: 200px;
-   }
-   .about {
-      width: 200px;
-   }
+
+.ourteam-wrap .person-card {
+   width: 25%;
+   margin-bottom: 50px;
+   padding: 0 10px;
+}
+.ourteam-wrap .person-card .person-img{
+   width: 200px;
+   height: 200px;
+}
+.ourteam-wrap .person-card .ourteam-profession{
+   font-size: 14px;
+}
+
 }
 
 @media (max-width: 992px) {
-
+   .contener {
+      width: 750px;
+   }
+   .features-card{
+      width: 40%;
+      margin: 0 15px 30px;
+}
+#ourteam{
+   padding: 50px 0 20px 0;
+}
+.ourteam-wrap .person-card {
+   width: 50%;
+}
+.ourteam-wrap .person-card .person-img{
+   width: 300px;
+   height: 300px;
+}
 }
 @media (max-width:767px) {
+   .contener {
+      width: 100%;
+   }
    .header-burger {
       display: block;
       position: relative;
@@ -94,15 +122,14 @@ left: 0;
       bottom: 0;
    }
    .navigation.active {
-      top: 0;
+      left: 0;
    }
    .header-burger.active span{
       opacity: 0;
    }
    .header-burger.active::before{
-
-      top: 9px;
       transform: rotate(45deg);
+      top: 9px;
    }
    .header-burger.active::after{
       transform: rotate(-45deg);
@@ -112,8 +139,8 @@ left: 0;
 
    .navigation{
       position: absolute;
-      top: -100%;
-      left: 0;
+      top: 0;
+      left: -100%;
       width: 100%;
       height: 100%;
       background-color: #252B49;
@@ -124,6 +151,7 @@ left: 0;
       
       ul{ 
          line-height: 70px;
+         flex-direction: column;
 
          a:hover{
             border-bottom: 0px solid #fff;
@@ -132,7 +160,142 @@ left: 0;
          }
       }
    }
+   .inform {
+   
+   .title-inform {
+      font-size: 50px;
+   }
+}
+.feature-title{
+   font-size: 18px;
+}
+.worklink {
+   width: 50%;
+}
+.ourteam-wrap .person-card {
+   width: 50%;
+}
+.ourteam-wrap .person-card .person-img {
+   width: 250px;
+   height: 250px;
+}
+.contact-wrap .lcanion {
+   width: 100%;
+   margin-bottom: 30px;
+}
+.contact-wrap .lcanion h5{
+   margin-bottom: 20px;
+}
+.social{
+   width: 100%;
+   margin-bottom: 30px;
+}
+.social h5 {
+   margin-bottom: 20px;
+}
+.about{
+   width: 100%;
+}
+.about h5 {
+margin-bottom: 20px;
+}
+.swiper-backface-hidden .swiper-slide{
+   display: block;
+}
+.slider-img{
+   width: 100%;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+   display: none;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+   display: none;
+}
+}
+@media (max-width: 566px) {
+   .contener {
+      width: 100%;
+   }
+
+   .inform {
+   
+   .title-inform {
+      font-size: 40px;
+   }
+
+   .description {
+      p {
+   font-size: $_18px;
+      }
+   }
+}
+   .button {
+      width: 300px;
+      height: 65px;
+   }
+   a{
+      font-size: $_18px;
+   }
+
+   .features-card{
+      width: 100%;
+   }
+   .features-card__img{
+      margin-bottom: 30px;
+   }
+   .feature-title{
+      margin-bottom: 30px;
+   }
+
+.ourteam-wrap {
+   flex-direction: column;
+}
+.ourteam-wrap .person-card {
+   margin-bottom: 50px;
+}
+.ourteam-wrap .person-card {
+   width: 100%;
+   margin-bottom: 50px;
+}
+.ourteam-wrap .person-card .person-img {
+   margin: auto;
+   height: 100%;
+   width: 100%;
+}
+
+.download-btn {
+   width: 300px;
+   height: 65px;
+   a{
+      font-size: 18px;
+   }
+}
+.ourteam-wrap .person-card .person-img {
+   width: 100%;
+   height: 300px;
+   margin-bottom: 30px;
+}
+.slider-text{
+   width: 250px;
+   padding: 15px 0;
+}
+.footer-discription{ 
+   width: 300px;
+}
 }
 
 
-
+@media (max-width: 320px) {
+   .button {
+      width: 250px;
+   }
+   .slider-text{
+      width: 280px;
+   }
+   .footer-discription{ 
+      width: 250px;
+   }
+   .download-btn{
+      width: 220px;
+   }
+   }

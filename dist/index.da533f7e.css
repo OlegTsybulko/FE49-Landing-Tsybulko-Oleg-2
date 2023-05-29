@@ -16,7 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px 0;
+  padding: 30px 0 100px;
   position: relative;
 }
 
@@ -35,7 +35,7 @@
   border-bottom: 1px solid #d9d9d9;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding-bottom: 30px;
   display: flex;
 }
 
@@ -51,8 +51,11 @@
 
 .navigation ul {
   justify-content: space-between;
-  margin-left: 24px;
   display: flex;
+}
+
+.navigation ul li {
+  margin-left: 20px;
 }
 
 .navigation a {
@@ -72,30 +75,33 @@
   color: red;
   border-bottom: 3px solid red;
   padding-bottom: 35px;
+  transition: all 1s;
+}
+
+.inform {
+  margin: 189px auto 0;
 }
 
 .inform .title-inform {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  margin: 189px auto 0;
+  margin-bottom: 48px;
   font-family: Raleway;
-  font-size: 4rem;
+  font-size: 64px;
   font-style: normal;
   font-weight: 900;
-}
-
-.inform .description {
-  margin: 48px auto 0;
 }
 
 .inform .description p {
   color: #fff;
   text-align: center;
+  margin-bottom: 50px;
   font-family: Raleway;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .button {
@@ -105,8 +111,9 @@
   cursor: pointer;
   background-color: #ff4343;
   border: 1px solid #ff4343;
-  margin: 85px auto 118px;
+  margin: auto;
   padding: 20px;
+  transition: all 1s;
 }
 
 .button a {
@@ -120,12 +127,13 @@
 
 .button:hover {
   background-color: #e71414;
+  transition: all 1s;
   transform: scale(1.2);
   box-shadow: 4px 4px 30px #ff4343;
 }
 
-.features {
-  padding: 20px 0;
+#features {
+  padding: 50px 0;
 }
 
 .features-wrap {
@@ -133,17 +141,15 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 15px;
-  padding: 48px 0;
   display: flex;
 }
 
-.features-wrap .features-card {
-  width: 370px;
-  margin-bottom: 100px;
-  padding: 0 15px;
+.features-card {
+  width: 340px;
+  margin: 0 15px 50px;
 }
 
-.features-wrap .features-card__img {
+.features-card__img {
   width: 100px;
   height: 100px;
   text-align: center;
@@ -151,7 +157,7 @@
   margin: auto auto 66px;
 }
 
-.features-wrap h2 {
+h2 {
   text-transform: uppercase;
   text-align: center;
   color: #2d3033;
@@ -162,37 +168,43 @@
   font-weight: 900;
 }
 
-.features-wrap p {
+.feature-discription {
   text-align: center;
+}
+
+p {
   color: #6c7279;
-  align-items: center;
   font-family: Raleway;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
 }
 
-.work {
-  padding: 20px 0;
+.features-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .work-wrap {
   flex-wrap: wrap;
-  padding: 0 0 30px;
+  margin: 0 -15px;
   display: flex;
 }
 
-.work-img {
+.worklink {
   width: 25%;
-  height: 350px;
+  height: 250px;
   border: 1px solid #fff;
   position: relative;
   overflow: hidden;
 }
 
-.work-img:hover .work-content {
+.worklink:hover .work-content {
   opacity: 1;
+  transition: all 2s;
 }
 
 .work-pic {
@@ -238,8 +250,8 @@
   font-weight: 400;
 }
 
-.ourteam {
-  padding: 20px 0;
+#ourteam {
+  padding: 100px 0;
 }
 
 .ourteam-wrap {
@@ -252,11 +264,12 @@
 
 .ourteam-wrap .person-card {
   width: 270px;
+  margin: 0 -15px;
 }
 
 .ourteam-wrap .person-card .person-img {
-  width: 270px;
-  height: 270px;
+  width: 260px;
+  height: 260px;
   border: 1px solid #fff;
   margin-bottom: 40px;
   overflow: hidden;
@@ -282,11 +295,12 @@
   font-style: Regular;
   color: #ff4343;
   text-transform: uppercase;
+  margin-bottom: 30px;
   font-size: 1.125rem;
 }
 
 .ourteam-wrap .ourteam-discription {
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .ourteam-wrap .ourteam-discription p {
@@ -311,6 +325,10 @@
 
 .ourteam-wrap .ourteamnav-list li a {
   color: #c6cbcd;
+}
+
+.ourteam-wrap .ourteamnav-list li a .fa-facebook, .ourteam-wrap .ourteamnav-list li a .fa-twitter, .ourteam-wrap .ourteamnav-list li a .fa-linkedin {
+  transition: all 1s;
 }
 
 .ourteam-wrap .ourteamnav-list li .fa-facebook:hover, .ourteam-wrap .ourteamnav-list li .fa-twitter:hover, .ourteam-wrap .ourteamnav-list li .fa-linkedin:hover {
@@ -341,6 +359,7 @@
 .download-wrap h5 {
   text-align: center;
   color: #000;
+  margin-bottom: 70px;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -354,8 +373,9 @@
   cursor: pointer;
   background-color: #ff4343;
   border: 1px solid #ff4343;
-  margin: 85px auto 118px;
+  margin: auto;
   padding: 20px;
+  transition: all 1.5s;
 }
 
 .download-btn a {
@@ -369,6 +389,7 @@
 
 .download-btn:hover {
   background-color: #e71414;
+  transition: all 1.5s;
   transform: scale(1.2);
   box-shadow: 4px 4px 30px #ff4343;
 }
@@ -381,12 +402,13 @@
 .contact-wrap {
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 15px;
+  margin: 0 -15px;
   display: flex;
 }
 
 .contact-wrap .lcanion {
-  width: 370px;
+  width: 360px;
+  margin: 0 15px;
 }
 
 .contact-wrap .lcanion h5 {
@@ -413,7 +435,8 @@
 }
 
 .social {
-  width: 370px;
+  width: 360px;
+  margin: 0 15px;
 }
 
 .social ul {
@@ -452,13 +475,19 @@
   color: #c6cbcd;
 }
 
+.socialnav-list .social-list__itme .fa-facebook, .socialnav-list .social-list__itme .fa-twitter, .socialnav-list .social-list__itme .fa-linkedin {
+  transition: all 1s;
+}
+
 .socialnav-list .social-list__itme .fa-facebook:hover, .socialnav-list .social-list__itme .fa-twitter:hover, .socialnav-list .social-list__itme .fa-linkedin:hover {
   color: #00f;
+  transition: all 1s;
   transform: scale(1.5);
 }
 
 .about {
-  width: 370px;
+  width: 360px;
+  margin: 0 15px;
 }
 
 .about h5 {
@@ -515,7 +544,7 @@
 }
 
 .swiper {
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 .swiper-wrapper {
@@ -526,7 +555,7 @@
 
 .slider-img {
   width: 50%;
-  height: 500px;
+  height: 100%;
   border: 1px solid #fff;
   overflow: hidden;
 }
@@ -534,6 +563,8 @@
 .slider-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .swiper-slide {
@@ -555,6 +586,7 @@
   font-size: 2.25rem;
   font-style: italic;
   font-weight: 400;
+  line-height: 1;
 }
 
 .slider-text .span {
@@ -565,10 +597,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
-}
-
-.section {
-  padding: 20px 0;
 }
 
 html {
@@ -584,25 +612,59 @@ html {
 }
 
 @media (width <= 1200px) {
-  .ourteam-wrap {
-    width: 700px;
-    margin: auto;
+  .contener {
+    width: 970px;
   }
 
-  .ourteamnav {
-    margin-bottom: 20px;
+  .features-card, .contact-wrap .lcanion, .social, .about {
+    width: 25%;
   }
 
-  .lcanion {
-    width: 250px;
+  .ourteam-wrap .person-card {
+    width: 25%;
+    margin-bottom: 50px;
+    padding: 0 10px;
   }
 
-  .social, .about {
+  .ourteam-wrap .person-card .person-img {
     width: 200px;
+    height: 200px;
+  }
+
+  .ourteam-wrap .person-card .ourteam-profession {
+    font-size: 14px;
+  }
+}
+
+@media (width <= 992px) {
+  .contener {
+    width: 750px;
+  }
+
+  .features-card {
+    width: 40%;
+    margin: 0 15px 30px;
+  }
+
+  #ourteam {
+    padding: 50px 0 20px;
+  }
+
+  .ourteam-wrap .person-card {
+    width: 50%;
+  }
+
+  .ourteam-wrap .person-card .person-img {
+    width: 300px;
+    height: 300px;
   }
 }
 
 @media (width <= 767px) {
+  .contener {
+    width: 100%;
+  }
+
   .header-burger {
     width: 30px;
     height: 18px;
@@ -636,7 +698,7 @@ html {
   }
 
   .navigation.active {
-    top: 0;
+    left: 0;
   }
 
   .header-burger.active span {
@@ -662,11 +724,12 @@ html {
     padding: 20px 5px;
     display: block;
     position: absolute;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: -100%;
   }
 
   .navigation ul {
+    flex-direction: column;
     line-height: 70px;
   }
 
@@ -674,6 +737,149 @@ html {
     color: red;
     border-bottom: 0 solid #fff;
     padding-bottom: 0;
+  }
+
+  .inform .title-inform {
+    font-size: 50px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .worklink, .ourteam-wrap .person-card {
+    width: 50%;
+  }
+
+  .ourteam-wrap .person-card .person-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .contact-wrap .lcanion {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-wrap .lcanion h5 {
+    margin-bottom: 20px;
+  }
+
+  .social {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .social h5 {
+    margin-bottom: 20px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about h5 {
+    margin-bottom: 20px;
+  }
+
+  .swiper-backface-hidden .swiper-slide {
+    display: block;
+  }
+
+  .slider-img {
+    width: 100%;
+  }
+
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled, .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (width <= 566px) {
+  .contener {
+    width: 100%;
+  }
+
+  .inform .title-inform {
+    font-size: 40px;
+  }
+
+  .inform .description p {
+    font-size: 1.125rem;
+  }
+
+  .button {
+    width: 300px;
+    height: 65px;
+  }
+
+  a {
+    font-size: 1.125rem;
+  }
+
+  .features-card {
+    width: 100%;
+  }
+
+  .features-card__img, .feature-title {
+    margin-bottom: 30px;
+  }
+
+  .ourteam-wrap {
+    flex-direction: column;
+  }
+
+  .ourteam-wrap .person-card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .ourteam-wrap .person-card .person-img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .download-btn {
+    width: 300px;
+    height: 65px;
+  }
+
+  .download-btn a {
+    font-size: 18px;
+  }
+
+  .ourteam-wrap .person-card .person-img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .slider-text {
+    width: 250px;
+    padding: 15px 0;
+  }
+
+  .footer-discription {
+    width: 300px;
+  }
+}
+
+@media (width <= 320px) {
+  .button {
+    width: 250px;
+  }
+
+  .slider-text {
+    width: 280px;
+  }
+
+  .footer-discription {
+    width: 250px;
+  }
+
+  .download-btn {
+    width: 220px;
   }
 }
 

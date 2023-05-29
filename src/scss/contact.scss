@@ -6,10 +6,11 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   margin: 0 15px;
+   margin: 0 -15px;
 
 .lcanion{
-   width: 370px;
+   width: 360px;
+   margin: 0 15px;
 
 h5{
    @include contact-title
@@ -22,7 +23,8 @@ p{
 }
 
 .social{
-   width: 370px;
+   width: 360px;
+   margin: 0 15px;
    
 ul{
    width: 150px;
@@ -49,23 +51,36 @@ ul{
       a{
          color:rgba(198, 203, 205, 1);
       }
+      .fa-facebook{
+         transition: 1s;
+      }
+      .fa-twitter{
+         transition: 1s;
+      }
+      .fa-linkedin{
+         transition: 1s;
+      }
       .fa-facebook:hover{
          transform: scale(1.5);
          color: blue;
+         transition: 1s;
       }
       .fa-twitter:hover{
          transform: scale(1.5);
          color: blue;
+         transition: 1s;
       }
       .fa-linkedin:hover{
          transform: scale(1.5);
          color: blue;
+         transition: 1s;
       }
    }
 }
 
 .about {
-   width: 370px;
+   width: 360px;
+   margin: 0 15px;
 
    h5 {
       @include contact-title

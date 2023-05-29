@@ -22,6 +22,7 @@
       font-size: 18px;
       text-align: center;
       color: rgba(0, 0, 0, 1);
+      margin-bottom: 70px;
    }
 }
 
@@ -32,8 +33,9 @@
    cursor: pointer;
    background-color: #ff4343;
    border: 1px solid #ff4343;
-   margin: 85px auto 118px;
+   margin: auto;
    padding: 20px;
+   transition: 1.5s;
 
    a{
       font-family: 'Raleway';
@@ -48,4 +50,5 @@
    transform: scale(1.2);
    background-color: rgba(231, 20, 20, 1);
    box-shadow: 4px 4px 30px #FF4343;
+   transition: 1.5s;
 }

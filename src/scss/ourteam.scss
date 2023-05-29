@@ -1,79 +1,91 @@
-   .ourteam {
-   padding: 20px 0;
-   }
+#ourteam {
+   padding: 100px 0;
+}
+.ourteam-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+margin: 0 15px;
 
-   .ourteam-wrap {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-   margin: 0 15px;
+.person-card {
+   width: 270px;
+   margin: 0 -15px;
 
-   .person-card {
-      width: 270px;
 
-      .person-img{
-         border: 1px solid #fff;
-         width: 270px;
-         height: 270px;
-         overflow: hidden;
-         margin-bottom: 40px;
-   }
+   .person-img{
+      border: 1px solid #fff;
+      width: 260px;
+      height: 260px;
+      overflow: hidden;
+      margin-bottom: 40px;
+}
 
-   .person-img__item{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   object-position: center;  
-   }
+.person-img__item{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;  
+}
 
-   .ourteam-name{
-      @include ourteam-name
-   }
+.ourteam-name{
+   @include ourteam-name
+}
+
+.ourteam-profession {
+   @include ourteam-profession
+}
+
+}
+
+.ourteam-discription{
+   margin-bottom: 30px;
    
-   .ourteam-profession {
-      @include ourteam-profession
+   p {
+   @include ourteam-discription
    }
+}
 
-   }
 
-   .ourteam-discription{
-      margin: 30px 0;
-      p {
-         @include ourteam-discription
-      }
-   }
+.ourteamnav-list{
+   display: flex;
 
-   .ourteamnav-list{
-      display: flex;
+   li{
+      border: 1px solid #C6CBCD;
+      width: 39px;
+      height: 39px;
+      margin-right: 5px;
+      padding: 10px;
+      text-align: center; 
       
 
-      li{
-         border: 1px solid #C6CBCD;
-         width: 39px;
-         height: 39px;
-         margin-right: 5px;
-         padding: 10px;
-         text-align: center; 
-
-         a{
-            color: #C6CBCD;
-         }
-         .fa-facebook:hover{
-            transform: scale(1.5);
+      a{
+         color: #C6CBCD;
+         .fa-facebook{
             transition: 1s;
-            color: blue;
          }
-         .fa-twitter:hover{
-            transform: scale(1.5);
+         .fa-twitter{
             transition: 1s;
-            color: blue;
          }
-         .fa-linkedin:hover{
-            transform: scale(1.5);
+         .fa-linkedin {
             transition: 1s;
-            color: blue;
          }
       }
+      .fa-facebook:hover{
+         transform: scale(1.5);
+         transition: 1s;
+         color: blue;
+      }
+      .fa-twitter:hover{
+         transform: scale(1.5);
+         transition: 1s;
+         color: blue;
+      }
+      .fa-linkedin:hover{
+         transform: scale(1.5);
+         transition: 1s;
+         color: blue;
+      }
    }
+}
 }

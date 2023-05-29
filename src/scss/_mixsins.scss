@@ -26,13 +26,11 @@ color: #FFFFFF;
 }
 
 @mixin feature-discription{
-   font-family: 'Raleway';
+font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: $_18px;
 line-height: 21px;
-align-items: center;
-text-align: center;
 color: rgba(108, 114, 121, 1);
 }
 
@@ -67,6 +65,7 @@ color: rgba(108, 114, 121, 1);
    font-size: $_18px;
    color:#FF4343;
    text-transform: uppercase;
+   margin-bottom: 30px;
    }
 
    @mixin ourteam-discription {
