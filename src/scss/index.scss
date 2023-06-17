@@ -211,6 +211,9 @@ margin-bottom: 20px;
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
    display: none;
 }
+.swiper-button-prev{
+   display: none;
+}
 }
 @media (max-width: 566px) {
    .contener {
